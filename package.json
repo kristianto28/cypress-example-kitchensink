@@ -39,7 +39,7 @@
     "test:ci:record:parallel": "run-p --race start:ci e2e:record:parallel",
     "report:cleanup": "rm -rf cypress/report/mochawesome-report",
     "report:merge-report": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/mochawesome-report/output.json",
-    "report:mochawesome-report": "marge --reportDir cypress/report/mochawesome-html-report -t Cypress_Test_Report -f Cypress_HTML_Report --charts true cypress/report/mochawesome-report/output.json",
+    "report:mochawesome-report": "marge --reportDir cypress/report/mochawesome-html-report -t Cypress_Test_Report -f index --charts true cypress/report/mochawesome-report/output.json",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
     "cy:version": "cypress version",
