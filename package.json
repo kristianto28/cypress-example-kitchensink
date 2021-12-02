@@ -40,7 +40,7 @@
     "report:cleanup": "rm -rf cypress/report/mochawesome-report",
     "report:merge-report": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/mochawesome-report/output.json",
     "report:mochawesome-report": "marge --reportDir cypress/report/mochawesome-html-report -t Cypress_Test_Report -f index --charts true cypress/report/mochawesome-report/output.json",
-    "report:post-slack": "cypress-slack-reporter --report-dir cypress/report/mochawesome-report",
+    "report:post-slack": "cypress-slack-reporter --vcs-provider github --ci-provider jenkins --report-dir cypress/report/mochawesome-report",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
     "cy:version": "cypress version",
