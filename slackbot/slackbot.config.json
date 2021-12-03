@@ -1,0 +1,5 @@
+{
+    "slackChannel": "#testing-purpose",
+    "reportPath": "../cypress/report/final-report",
+    "jenkinsUrl": "http://localhost:8888"
+}
