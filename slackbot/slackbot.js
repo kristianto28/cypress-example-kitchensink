@@ -87,14 +87,14 @@ async function run() {
       'type': 'section',
       'text': {
         'type': 'mrkdwn',
-        'text': `<${cibuild}|Build Logs>`,
+        'text': `<${process.env.BUILD_URL}|Build Logs>`,
       },
     },
     {
       'type': 'section',
       'text': {
         'type': 'mrkdwn',
-        'text': `<${process.env.BUILD_URL}|HTML Report>`,
+        'text': `<http://localhost:8888/job/CypressJenkins/HTML_20Report/*zip*/HTML_20Report.zip|Download report here>`,
       },
     },
   ]
