@@ -54,7 +54,7 @@ const sendReportSummary = async () => {
       'type': 'section',
       'text': {
         'type': 'mrkdwn',
-        'text': `<${process.env.BUILD_URL}|Build Logs> \n <${config.jenkinsUrl}/job/CypressJenkins/HTML_20Report/*zip*/HTML_20Report.zip|Download report here>`,
+        'text': `<${process.env.BUILD_URL}|Build Logs> \n <${config.jenkinsUrl}/job/CypressJenkinsPullGithub/HTML_20Report/*zip*/HTML_20Report.zip|Download report here>`,
       },
     }
   }
