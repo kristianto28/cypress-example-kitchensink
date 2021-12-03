@@ -85,7 +85,7 @@ const generateReportSummary = () => {
   let numTestCases = reportStats.tests
   let numTestPassed = reportStats.passes
   let numTestFailed = reportStats.failures
-  let numTestSkipped = reportStats.skipped
+  let numTestSkipped = reportStats.pending
   let passedRate = reportStats.passPercent.toFixed(2)
 
   return {
