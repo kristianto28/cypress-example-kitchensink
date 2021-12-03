@@ -94,7 +94,7 @@ async function run() {
       'type': 'section',
       'text': {
         'type': 'mrkdwn',
-        'text': `<${process.env.CI_BUILD_URL}|HTML Report>`,
+        'text': `<${process.env.BUILD_URL}|HTML Report>`,
       },
     },
   ]
