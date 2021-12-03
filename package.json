@@ -5,7 +5,8 @@
   "main": "index.js",
   "files": [
     "app",
-    "cypress"
+    "cypress",
+    "slackbot"
   ],
   "scripts": {
     "build": "npm run lint",
@@ -41,6 +42,7 @@
     "report:merge-report": "npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/final-report/output.json",
     "report:mochawesome-report": "marge --reportDir cypress/report/final-report -t Cypress_Test_Report -f index cypress/report/final-report/output.json",
     "report:post-slack": "cypress-slack-reporter --vcs-provider github --ci-provider jenkins --report-dir cypress/report/final-report",
+    "report:post-slack-report": "cd slackbot && node slackbot.js",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
     "cy:version": "cypress version",
@@ -71,6 +73,8 @@
   "devDependencies": {
     "@bahmutov/print-env": "1.2.0",
     "@cypress/eslint-plugin-dev": "5.0.0",
+    "@slack/web-api": "6.5.1",
+    "axios": "0.24.0",
     "colon-names": "1.0.0",
     "cypress": "7.3.0",
     "cypress-multi-reporters": "1.5.0",
