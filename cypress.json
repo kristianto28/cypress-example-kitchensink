@@ -1,7 +1,11 @@
 {
-  "reporter": "cypress-multi-reporters",
+  "reporter": "mochawesome",
   "reporterOptions": {
-    "configFile": "reporterOpts.json"
+    "charts": true,
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "reportDir": "cypress/report/mochawesome-report"
   },
   "projectId": "4b7344"
 }
